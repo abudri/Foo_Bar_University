@@ -1,0 +1,14 @@
+<Context>
+
+  <Resource name="jdbc/web_student_tracker" 
+  			auth="Container" type="javax.sql.DataSource"
+               maxActive="20" maxIdle="5" maxWait="10000"
+               username="webstudent" password="webstudent" 
+               driverClassName="com.mysql.cj.jdbc.Driver"
+               url="jdbc:mysql://localhost:3306/web_student_tracker?useSSL=false&amp;serverTimezone=UTC"/>
+
+</Context>
+
+<!--  this lesson had us update the url, https://hexaware.udemy.com/jsp-tutorial/learn/v4/t/lecture/10909198?start=1 -->
+<!--  got this error so updated the driverClassName appropriately, This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+java.sql.SQLException: Cannot create PoolableConnectionFactory (Public Key Retrieval is not allowed) -->
